@@ -1,5 +1,5 @@
 # react-native-progress-seekbar
-A draggable progress with seekbar , just like the seekbar in android.
+A draggable progress with seekbar, created by xwh817 (https://github.com/xwh817).
 
 <img src="https://github.com/xwh817/ReactNativeStepByStep/blob/master/screenShot/seekBar.gif">
 
