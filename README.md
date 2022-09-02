@@ -6,22 +6,22 @@ A draggable progress with seekbar , just like the seekbar in android.
 
 ## Example
 
-```js
+```tsx
 
 
 	<SeekBar style={{margin: 20, padding: 20, backgroundColor: 'black'}}
-			 min={0}
-			 max={100}
-			 progress={this.state.value}
-			 progressHeight={4}
-			 progressBackgroundColor='#663300'
-			 progressColor='#88cc33'
-			 thumbSize={40}
-			 thumbColor='#88cc33'
-			 thumbColorPressed='#ff6633'
-			 onStartTouch={() => {console.log('onStartTouch')}}
-			 onProgressChanged={(progress) => console.log('onProgressChanged:' + progress)}
-			 onStopTouch={() => {console.log('onStopTouch')}}
+		 min={0}
+		 max={100}
+		 progress={value} // number
+		 progressHeight={4}
+		 progressBackgroundColor='#663300'
+		 progressColor='#88cc33'
+		 thumbSize={40}
+		 thumbColor='#88cc33'
+		 thumbColorPressed='#ff6633'
+		 onStartTouch={(progress) => {console.log('onStartTouch: ' + progress)}}
+		 onProgressChanged={(progress) => console.log('onProgressChanged: ' + progress)}
+		 onStopTouch={(progress) => {console.log('onStopTouch: ' + progress)}}
 	/>
 
 
